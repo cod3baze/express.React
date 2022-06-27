@@ -10,6 +10,8 @@
   --black: #000000;
   --genesis: #2ea44f;
 
+  --light-200: #f8f8f8;
+
   --gray-100: #e1e1e6;
   --gray-300: #a8a8b3;
   --gray-700: #323238;
@@ -24,8 +26,13 @@
 }
 
 body {
-  background: #f8f8f8;
-  color: #29292e;
+  background: var(--light-200);
+  color: var(--gray-800);
+
+  transition: all 0.2s ease-in-out;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body,
@@ -33,14 +40,6 @@ input,
 button,
 textarea {
   font: 400 16px "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-body {
-  background: var(--gray-900);
-  color: var(--white);
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 @media (max-width: 1080px) {

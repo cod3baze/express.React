@@ -43,7 +43,7 @@
     justify-content: center;
   }
 
-  .main-content {
+  .mainContent {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -53,6 +53,7 @@
 
     > img {
       align-self: center;
+      margin-bottom: 2rem;
     }
 
     h2 {
@@ -66,8 +67,13 @@
         height: 56px;
         border-radius: 8px;
         padding: 0 16px;
+        margin-bottom: 0.5rem;
         background: #fff;
         border: 1px solid #a8a8b3;
+
+        &:focus {
+          outline: 1.5px solid #835afd;
+        }
       }
 
       button {
@@ -88,57 +94,6 @@
       a {
         color: #e559f9;
       }
-    }
-  }
-
-  .create-room {
-    margin-top: 64px;
-    height: 50px;
-    border-radius: 8px;
-    font-weight: 500;
-    background: #ea4335;
-    color: #fff;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: filter 0.2s;
-
-    cursor: pointer;
-    border: 0;
-
-    img {
-      margin-right: 8px;
-    }
-
-    &:hover {
-      filter: brightness(0.9);
-    }
-  }
-
-  .separator {
-    font-size: 14px;
-    color: #a8a8b3;
-
-    margin: 32px 0;
-    display: flex;
-    align-items: center;
-
-    &::before {
-      content: "";
-      flex: 1;
-      height: 1px;
-      background: #a8a8b3;
-      margin-right: 16px;
-    }
-
-    &::after {
-      content: "";
-      flex: 1;
-      height: 1px;
-      background: #a8a8b3;
-      margin-left: 16px;
     }
   }
 }
