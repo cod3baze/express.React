@@ -1,9 +1,16 @@
+import { AppProps } from "next/app";
+import { Toaster } from "react-hot-toast";
+import { AuthContextProvider } from "../contexts/AuthContext";
+
 import "../styles/globals.css";
 
-import { AppProps } from "next/app";
-
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <AuthContextProvider>
+      <Component {...pageProps} />
+      <Toaster />
+    </AuthContextProvider>
+  );
 }
 
 export default MyApp;
