@@ -1,0 +1,43 @@
+#welcomePage {
+  .cover {
+    max-width: 600px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  main.content {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 4rem;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+
+      height: 300px;
+      padding: 1rem;
+      border-radius: 0.3rem;
+
+      border: 2px solid var(--gray-100);
+      transition: all 0.2s ease-in-out;
+      background: var(--gray-100);
+
+      &:hover {
+        background: var(--light-400);
+        border: 2px solid var(--express);
+      }
+
+      > img {
+        width: 140px;
+        height: 140px;
+        object-fit: contain;
+      }
+    }
+  }
+}

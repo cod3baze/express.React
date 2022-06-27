@@ -57,7 +57,7 @@ export default function AuthPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.pageAuth}>
+      <div id={styles.pageAuth}>
         <aside>
           <img
             src="/assets/illustration.svg"
